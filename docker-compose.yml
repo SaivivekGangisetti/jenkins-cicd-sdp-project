@@ -16,7 +16,7 @@ services:
     image: rahuletyala/fooddelivery-backend:latest
     container_name: springboot
     ports:
-      - "2025:2004"
+      - "2025:2000"
     depends_on:
       - mysqldb
     restart: on-failure
