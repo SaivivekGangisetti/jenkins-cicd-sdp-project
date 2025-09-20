@@ -13,9 +13,6 @@ services:
       - springboot-mysql-net
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile-backend
     image: rahuletyala/docker-backend:latest
     container_name: springboot
     ports:
@@ -25,15 +22,8 @@ services:
     restart: on-failure
     networks:
       - springboot-mysql-net
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysqldb:3306/klustudentdb
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: docker
 
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile-frontend
     image: rahuletyala/docker-frontend:latest
     container_name: react
     ports:
@@ -43,9 +33,6 @@ services:
     restart: on-failure
     networks:
       - springboot-mysql-net
-    environment:
-      # Pass backend URL for Vite build (important!)
-      VITE_API_URL: http://backend:2000
 
 volumes:
   mysql_data:
