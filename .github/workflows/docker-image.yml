@@ -1,4 +1,4 @@
-name: Docker Fullstack CI
+name: Docker Fullstack food delivery app
 
 on:
   push:
