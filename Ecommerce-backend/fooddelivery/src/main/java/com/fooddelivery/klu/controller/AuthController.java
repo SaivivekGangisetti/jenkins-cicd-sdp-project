@@ -31,6 +31,12 @@ public class AuthController {
         this.emailService = emailService;
     }
 
+
+    @GetMapping("/")
+    public String home() {
+        return "Welcome to Food Delivery API";
+    }
+
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody Map<String, Object> body) {
         try {
