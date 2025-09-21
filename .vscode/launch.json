@@ -1,1 +1,14 @@
-
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FooddeliveryApplication<fooddelivery (2)>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fooddelivery.klu.FooddeliveryApplication",
+            "projectName": "fooddelivery (2)",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
