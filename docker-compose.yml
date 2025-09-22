@@ -12,6 +12,7 @@ services:
     networks:
       - springboot-mysql-net
 
+
   backend:
     image: rahuletyala/fooddelivery-backend:latest
     container_name: springboot
