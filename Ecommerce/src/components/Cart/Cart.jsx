@@ -126,7 +126,7 @@ class Cart extends Component {
                     exit={{ opacity: 0, x: 20 }}
                     transition={{ duration: 0.3 }}
                     layout
-                  >
+                  > 
                     <div className="item-image">
                       <img src={item.productImage || item.product_image} alt={item.name} />
                     </div>
