@@ -35,6 +35,7 @@ export default function DeliveryPortal() {
     }
   };
 
+  // Assign order to self
   const takeOrder = async (orderId) => {
     await fetch(`${API_BASE}/orders/${orderId}/assign/${userInfo.user_id}`, {
       method: "PUT",
@@ -44,6 +45,7 @@ export default function DeliveryPortal() {
     fetchOrders();
   };
 
+  // Mark order as delivered
   const markDelivered = async (orderId) => {
     await fetch(`${API_BASE}/orders/${orderId}/status`, {
       method: "PUT",
