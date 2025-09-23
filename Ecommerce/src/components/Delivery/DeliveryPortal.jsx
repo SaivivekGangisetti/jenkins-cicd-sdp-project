@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 
+// Base URL for API
 const API_BASE = (import.meta.env.VITE_BASE_URL || "http://localhost:8080/api").replace(/\/$/, "");
 
 export default function DeliveryPortal() {
