@@ -17,7 +17,7 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
     const normalizedRole = (role ?? "").toString().trim().toUpperCase();
     const normalizedAllowed = allowedRoles.map(r => (r ?? "").toString().trim().toUpperCase());
     if (!normalizedRole || !normalizedAllowed.includes(normalizedRole)) {
-      return <Navigate to="/" replace />;
+      return <Navigate to="/Fooddelivery-frontend/" replace />;
     }
   }
 
