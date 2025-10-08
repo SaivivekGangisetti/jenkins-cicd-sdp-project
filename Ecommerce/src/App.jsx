@@ -45,7 +45,7 @@ const App = () => {
 
         {/* Home (Protected) */}
         <Route
-          path="/"
+          path="/Fooddelivery-frontend/"
           element={
             <ProtectedRoute>
               <Home />
