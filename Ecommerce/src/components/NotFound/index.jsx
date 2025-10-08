@@ -12,7 +12,7 @@ const NotFound = () => (
     <p className="not-found-description">
       We couldn’t find the page you are looking for.
     </p>
-    <Link to="/" className="home-link">
+    <Link to="/Fooddelivery-frontend" className="home-link">
       Go Back Home
     </Link>
   </div>
